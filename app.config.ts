@@ -3,11 +3,11 @@ module.exports = {
   slug: "hodor",
   version: "1.0.0",
   orientation: "portrait",
-  icon: "./assets/images/icon.png",
+  icon: "./assets/images/wave.png",
   scheme: "myapp",
   userInterfaceStyle: "automatic",
   splash: {
-    image: "./assets/images/splash.png",
+    image: "./assets/images/wave.png",
     resizeMode: "contain",
     backgroundColor: "#ffffff"
   },
@@ -22,11 +22,11 @@ module.exports = {
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: "./assets/images/adaptive-icon.png",
+      foregroundImage: "./assets/images/wave.png",
       backgroundColor: "#ffffff"
     }
   },
   web: {
-    favicon: "./assets/images/favicon.png"
+    favicon: "./assets/images/wave.png"
   }
 }
