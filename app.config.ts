@@ -1,3 +1,5 @@
+var applicationId = process.env.APPLICATION_ID;
+
 module.exports = {
   name: "Haidor",
   slug: "haidor",
@@ -23,13 +25,15 @@ module.exports = {
     policy: "sdkVersion"
   },
   ios: {
-    supportsTablet: true
+    supportsTablet: true,
+    bundleIdentifier: applicationId
   },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/images/wave.png",
       backgroundColor: "#ffffff"
-    }
+    },
+    package: applicationId
   },
   web: {
     favicon: "./assets/images/wave.png"
