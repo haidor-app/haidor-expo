@@ -12,11 +12,15 @@ module.exports = {
     backgroundColor: "#ffffff"
   },
   updates: {
-    fallbackToCacheTimeout: 0
+    fallbackToCacheTimeout: 0,
+    url: "https://u.expo.dev/69336643-f339-44c8-a529-2180bfd8050f"
   },
   assetBundlePatterns: [
     "**/*"
   ],
+  runtimeVersion: {
+    policy: "sdkVersion"
+  },
   ios: {
     supportsTablet: true
   },
@@ -28,5 +32,10 @@ module.exports = {
   },
   web: {
     favicon: "./assets/images/wave.png"
+  },
+  extra: {
+    eas: {
+      projectId: "69336643-f339-44c8-a529-2180bfd8050f"
+    }
   }
 }
