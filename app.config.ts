@@ -1,7 +1,8 @@
 module.exports = {
-  name: "hodor",
-  slug: "hodor",
+  name: "Haidor",
+  slug: "haidor",
   version: "1.0.0",
+  owner: "zabrador",
   orientation: "portrait",
   icon: "./assets/images/wave.png",
   scheme: "myapp",
@@ -13,7 +14,7 @@ module.exports = {
   },
   updates: {
     fallbackToCacheTimeout: 0,
-    url: "https://u.expo.dev/69336643-f339-44c8-a529-2180bfd8050f"
+    url: "https://u.expo.dev/954240a2-35ae-4dd9-9a2e-770e0be5b04f"
   },
   assetBundlePatterns: [
     "**/*"
@@ -35,7 +36,7 @@ module.exports = {
   },
   extra: {
     eas: {
-      projectId: "69336643-f339-44c8-a529-2180bfd8050f"
+      projectId: "954240a2-35ae-4dd9-9a2e-770e0be5b04f"
     }
   }
 }
