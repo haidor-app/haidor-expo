@@ -38,6 +38,9 @@ module.exports = {
   web: {
     favicon: "./assets/images/wave.png"
   },
+  plugins: [
+    "expo-router"
+  ],
   extra: {
     eas: {
       projectId: "954240a2-35ae-4dd9-9a2e-770e0be5b04f"
