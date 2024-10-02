@@ -1,11 +1,10 @@
 import 'expo-dev-client';
+import { ExpoRoot } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { initializeApp } from 'firebase/app';
 
 import useCachedResources from './hooks/useCachedResources';
-import useColorScheme from './hooks/useColorScheme';
-import Navigation from './navigation';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDCcjiqeswjCIqqk5LJkDJfGwTJNQDd9go",
@@ -20,14 +19,13 @@ initializeApp(firebaseConfig);
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
-  const colorScheme = useColorScheme();
 
   if (!isLoadingComplete) {
     return null;
   } else {
     return (
       <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
+        <ExpoRoot context={require.context('./app')} />
         <StatusBar />
       </SafeAreaProvider>
     );
