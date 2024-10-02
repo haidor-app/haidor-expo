@@ -7,7 +7,7 @@ module.exports = {
   owner: "zabrador",
   orientation: "portrait",
   icon: "./assets/images/wave.png",
-  scheme: "myapp",
+  scheme: "haidor",
   userInterfaceStyle: "automatic",
   splash: {
     image: "./assets/images/wave.png",
