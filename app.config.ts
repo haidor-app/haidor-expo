@@ -39,6 +39,8 @@ module.exports = {
     favicon: "./assets/images/wave.png"
   },
   plugins: [
+    "expo-asset",
+    "expo-font",
     "expo-router"
   ],
   extra: {
