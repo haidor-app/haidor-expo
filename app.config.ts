@@ -1,6 +1,9 @@
+import { ExpoConfig, ConfigContext } from 'expo/config';
+
 var applicationId = process.env.APPLICATION_ID;
 
-module.exports = {
+export default ({ config }: ConfigContext): ExpoConfig => ({
+  ...config,
   name: "Haidor",
   slug: "haidor",
   version: "1.0.0",
@@ -48,4 +51,4 @@ module.exports = {
       projectId: "954240a2-35ae-4dd9-9a2e-770e0be5b04f"
     }
   }
-}
+});
